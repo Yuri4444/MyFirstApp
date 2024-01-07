@@ -19,8 +19,8 @@
     <Button
         android:id="@+id/btKnopka"
         android:layout_width="0dp"
-        android:visibility="visible"
         android:layout_height="wrap_content"
+        android:onClick="onClickAvatar"
         android:text="@string/avatar"
         app:layout_constraintEnd_toEndOf="@+id/edLogin"
         app:layout_constraintStart_toStartOf="@+id/edLogin"
@@ -28,11 +28,11 @@
 
     <EditText
         android:id="@+id/edLogin"
-        android:hint="@string/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:hint="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/imAvatar"
         app:layout_constraintStart_toStartOf="@+id/imAvatar"
         app:layout_constraintTop_toBottomOf="@+id/btKnopka" />
@@ -43,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="@string/password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/edLogin"
         app:layout_constraintStart_toStartOf="@+id/edLogin"
         app:layout_constraintTop_toBottomOf="@+id/edLogin" />
@@ -87,9 +87,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:onClick="onClickDone"
         android:text="@string/done"
-        app:layout_constraintEnd_toEndOf="@id/edName3"
-        app:layout_constraintStart_toStartOf="@id/edName3"
+        app:layout_constraintEnd_toEndOf="@id/edPassword"
+        app:layout_constraintStart_toStartOf="@id/edPassword"
         app:layout_constraintTop_toBottomOf="@+id/edName3" />
 
 
